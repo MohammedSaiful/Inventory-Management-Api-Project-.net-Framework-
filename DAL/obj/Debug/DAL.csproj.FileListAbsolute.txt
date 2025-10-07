@@ -1,0 +1,15 @@
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\bin\Debug\DAL.dll.config
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\bin\Debug\DAL.dll
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\bin\Debug\DAL.pdb
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\bin\Debug\EntityFramework.dll
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\bin\Debug\EntityFramework.xml
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.dll
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.pdb
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.Migrations.initDB.resources
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.Migrations.data.resources

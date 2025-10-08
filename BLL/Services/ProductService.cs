@@ -41,12 +41,18 @@ namespace BLL.Services
 
         public static bool Create(ProductDTO product)
         {
+            product.TotalPrice = product.Quantity * product.UnitPrice;
+            product.EntryDate = DateTime.Now;
+            product.ExpiryDate = DateTime.Now.AddMonths(6);
+
             var  data = GetMapper().Map<Product>(product);
             return DataAccessFactory.ProductData().Create(data);
         }
 
         public static bool Update(ProductDTO product)
         {
+            product.TotalPrice = product.Quantity * product.UnitPrice;
+
             var data =GetMapper().Map<Product>(product);
             return DataAccessFactory.ProductData().Update(data);
         }

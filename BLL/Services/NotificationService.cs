@@ -45,8 +45,9 @@ namespace BLL.Services
         }
 
 
-        public static bool LowNotification(ProductDTO product, int threshold)
+        public static bool LowNotification(ProductDTO product)
         {
+            int threshold = 0;
             var data = GetMapper().Map<Product>(product);
             return DataAccessFactory.NotificationFeature().LowStockNotification(data, threshold);
         }

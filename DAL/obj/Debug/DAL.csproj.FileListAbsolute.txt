@@ -13,3 +13,6 @@ C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\o
 C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.Migrations.initDB.resources
 C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.Migrations.data.resources
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.Migrations.TokenTable.resources
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.Migrations.UserIdTypeFix.resources
+C:\Users\islam\Downloads\advanced .net\.netPractice\InventoryManagementApi\DAL\obj\Debug\DAL.Migrations._fixed.resources

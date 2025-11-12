@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Interfaces\IAuthen.cs" />
     <Compile Include="Interfaces\INotificationFeature.cs" />
     <Compile Include="Interfaces\IProductFeature.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
@@ -66,11 +67,24 @@
     <Compile Include="Migrations\202510031858364_data.Designer.cs">
       <DependentUpon>202510031858364_data.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202511070528152_TokenTable.cs" />
+    <Compile Include="Migrations\202511070528152_TokenTable.Designer.cs">
+      <DependentUpon>202511070528152_TokenTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511070544443_UserIdTypeFix.cs" />
+    <Compile Include="Migrations\202511070544443_UserIdTypeFix.Designer.cs">
+      <DependentUpon>202511070544443_UserIdTypeFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511071731055_fixed.cs" />
+    <Compile Include="Migrations\202511071731055_fixed.Designer.cs">
+      <DependentUpon>202511071731055_fixed.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AllContext.cs" />
     <Compile Include="Models\Notification.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Supplier.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Models\Transaction.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +92,7 @@
     <Compile Include="Repos\ProductRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\SupplierRepo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\TransactionRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
@@ -91,6 +106,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202510031858364_data.resx">
       <DependentUpon>202510031858364_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511070528152_TokenTable.resx">
+      <DependentUpon>202511070528152_TokenTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511070544443_UserIdTypeFix.resx">
+      <DependentUpon>202511070544443_UserIdTypeFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511071731055_fixed.resx">
+      <DependentUpon>202511071731055_fixed.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

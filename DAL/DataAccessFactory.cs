@@ -43,5 +43,14 @@ namespace DAL
         {
             return new NotificationRepo();
         }
+
+        public static IAuthen<bool> AuthenData()
+        {
+            return new UserRepo();
+        }
+        public static IRepo<Token, string, Token> TokenData()
+        {
+            return new TokenRepo();
+        }
     }
 }

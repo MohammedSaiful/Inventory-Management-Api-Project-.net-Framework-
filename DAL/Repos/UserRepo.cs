@@ -8,8 +8,15 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class UserRepo : Repo, IRepo<User, string, User>
+    internal class UserRepo : Repo, IRepo<User, string, User>, IAuthen<bool>
     {
+        public bool GetAuthen(string username, string password)
+        {
+            var data = db.Users.FirstOrDefault(u => u.Uname.Equals(username) && u.Password.Equals(password));
+            if(data != null) return true; 
+            return false;
+        }
+
         public User Create(User obj)
         {
             db.Users.Add(obj);
@@ -33,6 +40,8 @@ namespace DAL.Repos
         {
             return db.Users.ToList();
         }
+
+        
 
         public User Update(User obj)
         {

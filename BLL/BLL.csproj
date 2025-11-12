@@ -52,10 +52,12 @@
     <Compile Include="DTOs\ProductTransactionDTO.cs" />
     <Compile Include="DTOs\SupplierDTO.cs" />
     <Compile Include="DTOs\SupplierProductDTO.cs" />
+    <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="DTOs\TransactionDTO.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
     <Compile Include="DTOs\UserTransactionDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AuthenService.cs" />
     <Compile Include="Services\NotificationService.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\SupplierService.cs" />

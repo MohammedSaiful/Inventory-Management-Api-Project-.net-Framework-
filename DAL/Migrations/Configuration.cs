@@ -14,7 +14,7 @@
 
         protected override void Seed(DAL.Models.AllContext context)
         {
-            var rndm = new Random();
+            /* var rndm = new Random();
             string[] types = { "admin", "staff" };
 
             for (int i = 1; i < 11; i++)
@@ -78,7 +78,7 @@
 
                 });
             }
-            context.SaveChanges();
+            context.SaveChanges();*/
         }
     }
 }

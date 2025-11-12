@@ -14,6 +14,7 @@ namespace DAL.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<Token> Tokens { get; set; }
 
     }
 }

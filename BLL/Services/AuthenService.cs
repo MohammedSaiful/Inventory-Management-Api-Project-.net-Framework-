@@ -41,7 +41,7 @@ namespace BLL.Services
             return null;
         }
 
-        // during logout updating the token delete time the update the token, update is okey the true
+        // during logout updating the token delete time then update the token, update is okey then true
         public static bool Logout(string tokenKey)  
         {
             var ExistToken = DataAccessFactory.TokenData().Get(tokenKey);

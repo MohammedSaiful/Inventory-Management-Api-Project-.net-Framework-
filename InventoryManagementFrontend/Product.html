@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="styleProduct.css">
+</head>
+
+<script>
+    var app = angular.module("my-app", []);
+
+    app.factory('interceptor', [function () {
+        var interceptor = {
+            request: function (config) {
+                var token = localStorage.getItem("tokenkey");
+                if (token) {
+                    config.headers.Authorization = token;
+                }
+                return config;
+            }
+        };
+        return interceptor;
+    }]);
+
+    app.config(function ($httpProvider) {
+        $httpProvider.interceptors.push('interceptor');
+    });
+
+
+    app.controller("ProductCtlr", function ($scope, $http) {
+        $http.get("https://localhost:44332/Api/Product/All").then(function (res) {
+            //debugger;
+            $scope.products = res.data;
+        },
+            function (err) {
+                $scope.errMsg = res.data.Message;
+                window.location.href = "Login.html";
+                debugger;
+            });
+        // });
+
+        $scope.logout = function () {
+            $http.post("https://localhost:44332/Api/Logout").then(function (res) {
+
+                localStorage.removeItem("tokenkey");
+                window.location.href = "Login.html";
+
+            }, function (err) {
+                localStorage.removeItem("tokenkey");
+                window.location.href = "Login.html";
+            });
+        };
+    });
+
+
+</script>
+
+<body ng-app="my-app">
+    <div class="container" ng-controller="ProductCtlr">
+        <button ng-click="logout()">Logout</button>
+
+        <div class="error-msg">{{errMsg}}</div>
+
+        <h3>Product List</h3>
+
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total Price</th>
+                <th>Expire Date</th>
+            </tr>
+            <tr ng-repeat="p in products">
+                <td>{{p.Id}}</td>
+                <td>{{p.Name}}</td>
+                <td>{{p.Category}}</td>
+                <td>{{p.Quantity}}</td>
+                <td>{{p.UnitPrice}}</td>
+                <td>{{p.TotalPrice}}</td>
+                <td>{{p.ExpiryDate}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

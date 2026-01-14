@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link rel="stylesheet" href="styleLogin.css">
+</head>
+
+<script>
+	var app = angular.module("my-app", []);
+
+	app.factory('interceptor', [function () {
+		var interceptor = {
+			request: function (config) {
+				config.headers.Authorization = localStorage.getItem("tokenkey");
+				debugger;
+				return config;
+			},
+			response: function (response) {
+				debugger;
+				return response;
+			}
+		};
+		return interceptor;
+	}]);
+
+	app.config(function ($httpProvider) {
+		$httpProvider.interceptors.push('interceptor');
+	});
+
+	app.controller('LoginCtlr', function ($scope, $http) {
+		$scope.login = function () {
+			var v = $scope.l;
+
+			$http.post("https://localhost:44332/Api/Login", v).then(function (res) {
+				debugger;
+				localStorage.setItem("tokenkey", res.data.TokenKey);
+				window.location.href = "Product.html";
+			},
+				function (err) {
+					alert(err.data.Message);
+					debugger;
+				});
+
+		};
+	});
+
+
+</script>
+
+<body ng-app="my-app">
+	<div class="login-container" ng-controller="LoginCtlr">
+		<h2>Login</h2>
+		<form ng-submit="login()">
+			<input type="text" ng-model="l.username" placeholder="User Name" required>
+			<input type="password" ng-model="l.password" placeholder="Password" required>
+			<input type="submit" value="Login">
+		</form>
+		<div class="error-msg" ng-if="errMsg">{{errMsg}}</div>
+	</div>
+</body>
+
+</html>

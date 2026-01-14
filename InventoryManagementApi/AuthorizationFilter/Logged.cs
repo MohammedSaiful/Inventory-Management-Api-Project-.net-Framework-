@@ -14,10 +14,11 @@ namespace InventoryManagementApi.AuthorizationFilter
         public override void OnAuthorization(HttpActionContext actionContext)
         {
             var token = actionContext.Request.Headers.Authorization;
-            if (token != null)
+            if (token == null)
             {
-                actionContext.Response = actionContext.Request.CreateResponse(System.Net.HttpStatusCode.Unauthorized,
-                    new { Msg = "No token supplied" });
+                actionContext.Response = 
+                    actionContext.Request.CreateResponse(System.Net.HttpStatusCode.Unauthorized,
+                        new { Msg = "No token supplied" });
             }
             else if(!AuthenService.ValidateToken(token.ToString()))
             {

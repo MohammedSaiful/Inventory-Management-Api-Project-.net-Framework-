@@ -19,5 +19,7 @@ namespace DAL.Models
         public DateTime? DeletedAt { get; set; }
         [Required]
         public string UserId {  get; set; }
+
+        // add user type for role base login
     }
 }

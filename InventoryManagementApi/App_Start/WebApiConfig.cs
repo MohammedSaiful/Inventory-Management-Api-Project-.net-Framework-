@@ -19,6 +19,7 @@ namespace InventoryManagementApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            config.EnableCors(); // we have to enable cors
         }
     }
 }

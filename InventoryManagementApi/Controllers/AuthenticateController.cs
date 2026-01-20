@@ -25,7 +25,7 @@ namespace InventoryManagementApi.Controllers
                 var res = AuthenService.Authenticate(login.username, login.password);
                 if (res != null)
                 {
-                    return Request.CreateResponse(HttpStatusCode.OK, res);
+                    return Request.CreateResponse(HttpStatusCode.OK, res); //Login Successfully
                 }
                 return Request.CreateResponse(HttpStatusCode.NotFound, new { Message = "User Not Found" });
             }

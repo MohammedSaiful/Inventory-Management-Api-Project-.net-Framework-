@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using InventoryManagementApi.AuthorizationFilter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace InventoryManagementApi.Controllers
     [RoutePrefix("Api/Transaction")]
     public class TransactionController : ApiController
     {
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("All")]
         public HttpResponseMessage GetAllTransaction()
@@ -27,6 +30,8 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("{id}")]
         public HttpResponseMessage GetTransaction(int id)
@@ -42,6 +47,8 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        [Logged]
+        [Role("staff")]
         [HttpPost]
         [Route("Create")]
         public HttpResponseMessage CreateTransaction(TransactionDTO t)
@@ -57,6 +64,8 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        [Logged]
+        [Role("admin")]
         [HttpDelete]
         [Route("Delete/{id}")]
         public HttpResponseMessage DeleteTransaction(int id)
@@ -72,6 +81,8 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        [Logged]
+        [Role("staff")]
         [HttpPut]
         [Route("Update/{id}")]
         public HttpResponseMessage UpdateTransaction(int id, TransactionDTO tran)

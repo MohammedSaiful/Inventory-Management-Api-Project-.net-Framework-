@@ -13,11 +13,12 @@
 		var interceptor = {
 			request: function (config) {
 				config.headers.Authorization = localStorage.getItem("tokenkey");
-				debugger;
+				//config.headers.Authorization = localStorage.getItem("username");
+				//debugger;
 				return config;
 			},
 			response: function (response) {
-				debugger;
+				//debugger;
 				return response;
 			}
 		};
@@ -35,7 +36,8 @@
 			$http.post("https://localhost:44332/Api/Login", v).then(function (res) {
 				debugger;
 				localStorage.setItem("tokenkey", res.data.TokenKey);
-				window.location.href = "Product.html";
+				//localStorage.setItem("username", res.data.username);
+				window.location.href = "ProductUpdated.html";
 			},
 				function (err) {
 					alert(err.data.Message);

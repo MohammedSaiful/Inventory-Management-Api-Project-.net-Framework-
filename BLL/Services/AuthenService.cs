@@ -26,8 +26,11 @@ namespace BLL.Services
             var result= DataAccessFactory.AuthenData().GetAuthen(username, password);
             if(result)
             {
+                var user =DataAccessFactory.UserData().Get(username);
+
                 var token = new Token();
                 token.UserId = username;
+                token.UserType =user.Type;
                 token.CreatedAt = DateTime.Now;
                 token.TokenKey = Guid.NewGuid().ToString();
 

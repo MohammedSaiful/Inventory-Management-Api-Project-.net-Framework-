@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="styleProductUpdated.css">
+</head>
+
+<script>
+    var app = angular.module("my-app", []);
+
+    // Attach token for every request
+    app.factory('interceptor', [function () {
+        return {
+            request: function (config) {
+                var token = localStorage.getItem("tokenkey");
+                //$scope.username = localStorage.getItem("username");
+                if (token) {
+                    config.headers.Authorization = token;
+                }
+                return config;
+            }
+        };
+    }]);
+
+    app.config(function ($httpProvider) {
+        $httpProvider.interceptors.push('interceptor');
+    });
+
+    app.controller("ProductCtlr", function ($scope, $http) {
+        $scope.errMsg = "";
+        $scope.successMsg = "";
+        $scope.form = {};
+        $scope.searchText = "";
+
+        // Load all products
+        $scope.loadProducts = function () {
+            $http.get("https://localhost:44332/Api/Product/All").then(function (res) {
+                $scope.products = res.data;
+                $scope.errMsg = "";
+            }, function (err) {
+                $scope.errMsg = err.data?.Msg || "Failed to fetch products";
+            });
+        };
+
+        $scope.loadProducts();
+
+        // Logout
+        $scope.logout = function () {
+            $http.post("https://localhost:44332/Api/Logout").finally(function () {
+                localStorage.removeItem("tokenkey");
+                window.location.href = "Login.html";
+            });
+        };
+
+        // Create or Update
+        $scope.saveProduct = function () {
+            if ($scope.form.Id) {
+                // Update
+                $http.put("https://localhost:44332/Api/Product/Update/" + $scope.form.Id, $scope.form)
+                    .then(function (res) {
+                        $scope.successMsg = "Product updated successfully";
+                        $scope.form = {};
+                        $scope.loadProducts();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Msg || "Update failed";
+                    });
+            } else {
+                // Create
+                $http.post("https://localhost:44332/Api/Product/Create", $scope.form)
+                    .then(function (res) {
+                        $scope.successMsg = "Product created successfully";
+                        $scope.form = {};
+                        $scope.loadProducts();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Msg || "Create failed";
+                    });
+            }
+        };
+
+        // Edit product
+        $scope.editProduct = function (p) {
+            $scope.form = angular.copy(p);
+            $scope.successMsg = "";
+            $scope.errMsg = "";
+        };
+
+        // Delete product
+        $scope.deleteProduct = function (id) {
+            if (confirm("Are you sure you want to delete this product?")) {
+                $http.delete("https://localhost:44332/Api/Product/Delete/" + id)
+                    .then(function (res) {
+                        $scope.successMsg = "Product deleted successfully";
+                        $scope.loadProducts();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Msg || "Delete failed";
+                    });
+            }
+        };
+    });
+</script>
+
+<body ng-app="my-app">
+    <div class="container" ng-controller="ProductCtlr">
+
+        <!-- User N -->
+        <div class="welcome-text">Welcome, {{username}}</div>
+
+        <!-- Logout Button -->
+        <button class="logout-btn" ng-click="logout()">Logout</button>
+
+        <!-- Error and Success Messages -->
+        <div class="error-msg" ng-if="errMsg">{{errMsg}}</div>
+        <div class="success-msg" ng-if="successMsg">{{successMsg}}</div>
+
+        <!-- Page Heading -->
+        <h3>Product List</h3>
+
+        <!-- Search Input -->
+        <input type="text" ng-model="searchText" placeholder="Search by Name or Category">
+
+        <!-- Product Form -->
+        <h4>{{form.Id ? "Edit Product" : "Create Product"}}</h4>
+        <form ng-submit="saveProduct()" class="product-form">
+
+            <!-- Row 1: Name & Category -->
+            <div class="form-row">
+                <div class="form-col">
+                    <!-- Name Label -->
+                    <div class="label-text">Name:</div>
+                    <input type="text" ng-model="form.Name" placeholder="Enter product name" required>
+                </div>
+                <div class="form-col">
+                    <!-- Category Label -->
+                    <div class="label-text">Category:</div>
+                    <input type="text" ng-model="form.Category" placeholder="Enter product category" required>
+                </div>
+            </div>
+
+            <!-- Row 2: Quantity & Unit Price -->
+            <div class="form-row">
+                <div class="form-col">
+                    <!-- Quantity Label -->
+                    <div class="label-text">Quantity:</div>
+                    <input type="number" ng-model="form.Quantity" placeholder="Enter quantity" required>
+                </div>
+                <div class="form-col">
+                    <!-- Unit Price Label -->
+                    <div class="label-text">Unit Price:</div>
+                    <input type="number" ng-model="form.UnitPrice" placeholder="Enter unit price" required>
+                </div>
+            </div>
+
+            <!-- Row 3: Supplier ID -->
+            <div class="form-row">
+                <div class="form-col supplier-col">
+                    <!-- Supplier ID Label -->
+                    <div class="label-text">Supplier ID:</div>
+                    <input type="number" ng-model="form.SupplierId" placeholder="Enter supplier ID">
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-row submit-row">
+                <input type="submit" value="{{form.Id ? 'Update' : 'Create'}}">
+            </div>
+
+            <!-- Cancel Button -->
+            <div class="form-row cancel-row">
+                <button type="button" ng-click="form={}">Cancel</button>
+            </div>
+        </form>
+
+        <!-- Product Table -->
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total Price</th>
+                <th>Entry Date</th>
+                <th>Expiry Date</th>
+                <th>Actions</th>
+            </tr>
+            <tr ng-repeat="p in products | filter:searchText">
+                <td>{{p.Id}}</td>
+                <td>{{p.Name}}</td>
+                <td>{{p.Category}}</td>
+                <td>{{p.Quantity}}</td>
+                <td>{{p.UnitPrice}}</td>
+                <td>{{p.TotalPrice}}</td>
+                <td>{{p.EntryDate | date:'yyyy-MM-dd'}}</td>
+                <td>{{p.ExpiryDate | date:'yyyy-MM-dd'}}</td>
+                <td>
+                    <button ng-click="editProduct(p)">Edit</button>
+                    <button ng-click="deleteProduct(p.Id)">Delete</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

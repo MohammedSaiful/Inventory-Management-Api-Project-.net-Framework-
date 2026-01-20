@@ -37,42 +37,63 @@ namespace BLL.Services
 
         public static bool Create(TransactionDTO transaction)
         {
-            var temp = DataAccessFactory.ProductData().Get(transaction.ProductId);
-            var data1 = GetMapper().Map<ProductDTO>(temp);
+            var product = DataAccessFactory.ProductData().Get(transaction.ProductId);
+            if (product == null) return false;
 
+            var productDTO = GetMapper().Map<ProductDTO>(product);
+
+            // Apply stock change
             if (transaction.Tran_Type == "IN")
-            {
-                data1.Quantity = data1.Quantity +transaction.Tran_Qty;
-               // temp.Quantity=temp.Quantity + transaction.Tran_Qty;
-               // var data1 = GetMapper().Map<ProductDTO>(temp);
-                ProductService.Update(data1);
-               // temp.TotalPrice=temp.UnitPrice * temp.Quantity;
-            }
+                productDTO.Quantity += transaction.Tran_Qty;
             else
-            {
-                data1.Quantity = data1.Quantity - transaction.Tran_Qty;
-                ProductService.Update(data1);
-                //temp.Quantity = temp.Quantity - transaction.Tran_Qty;
-                // temp.TotalPrice = temp.UnitPrice * temp.Quantity;
-            }
+                productDTO.Quantity -= transaction.Tran_Qty;
 
+            // Prevent negative stock
+            if (productDTO.Quantity < 0)
+                return NotificationService.LowNotification(productDTO);
 
-            if (data1.Quantity > 0)
-            {
-                transaction.Tran_Date = DateTime.Now;
-                var data = GetMapper().Map<Transaction>(transaction);
-                return DataAccessFactory.TransactionData().Create(data);
-            }
-            else
-            {
-                return NotificationService.LowNotification(data1);
-            }
+            // Save updated stock
+            ProductService.Update(productDTO);
+
+            // Save transaction record
+            transaction.Tran_Date = DateTime.Now;
+            var tran = GetMapper().Map<Transaction>(transaction);
+
+            return DataAccessFactory.TransactionData().Create(tran);
         }
 
         public static bool Update(TransactionDTO transaction)
         {
-            var data = GetMapper().Map<Transaction>(transaction);
-            return DataAccessFactory.TransactionData().Update(data);
+            var oldTran = DataAccessFactory.TransactionData().Get(transaction.Id);
+            if (oldTran == null) return false;
+
+            var product = DataAccessFactory.ProductData().Get(transaction.ProductId);
+            if (product == null) return false;
+
+            var productDTO = GetMapper().Map<ProductDTO>(product);
+
+            // Reverse old transaction
+            if (oldTran.Tran_Type == "IN")
+                productDTO.Quantity -= oldTran.Tran_Qty;
+            else
+                productDTO.Quantity += oldTran.Tran_Qty;
+
+            //  Apply new transaction
+            if (transaction.Tran_Type == "IN")
+                productDTO.Quantity += transaction.Tran_Qty;
+            else
+                productDTO.Quantity -= transaction.Tran_Qty;
+
+            // Prevent negative stock
+            if (productDTO.Quantity < 0)
+                return false;
+
+            // Save updated product stock
+            ProductService.Update(productDTO);
+
+            // Update transaction record
+            var tran = GetMapper().Map<Transaction>(transaction);
+            return DataAccessFactory.TransactionData().Update(tran);
         }
 
         public static bool Delete(int id)

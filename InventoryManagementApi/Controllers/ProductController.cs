@@ -16,6 +16,7 @@ namespace InventoryManagementApi.Controllers
     public class ProductController : ApiController
     {
         [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("All")]
         public HttpResponseMessage GetAllProduct()
@@ -27,10 +28,12 @@ namespace InventoryManagementApi.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = ex.Message });
             }
         }
 
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("{id}")]
         public HttpResponseMessage GetProduct(int id)
@@ -42,10 +45,14 @@ namespace InventoryManagementApi.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.NotFound, ex.Message);
+                return Request.CreateResponse(
+                    HttpStatusCode.NotFound,
+                    new {Msg = ex.Message});
             }
         }
 
+        [Logged]
+        [Role("admin")]
         [HttpDelete]
         [Route("Delete/{id}")]
         public HttpResponseMessage DeleteProduct(int id)
@@ -57,10 +64,12 @@ namespace InventoryManagementApi.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = ex.Message });
             }
         }
 
+        [Logged]
+        [Role("admin")]
         [HttpPost]
         [Route("Create")]
         public HttpResponseMessage CreateProduct(ProductDTO pro)
@@ -72,10 +81,12 @@ namespace InventoryManagementApi.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = ex.Message });
             }
         }
 
+        [Logged]
+        [Role("admin")]
         [HttpPut]
         [Route("Update/{id}")]
         public HttpResponseMessage UpdateProduct(int id, ProductDTO pro)
@@ -88,10 +99,12 @@ namespace InventoryManagementApi.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = ex.Message });
             }
         }
 
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("{id}/Transactions")]
         public HttpResponseMessage ProductTransactions(int id)
@@ -107,6 +120,8 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("{id}/Notifications")]
         public HttpResponseMessage ProductNotifications(int id)

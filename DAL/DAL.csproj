@@ -79,6 +79,14 @@
     <Compile Include="Migrations\202511071731055_fixed.Designer.cs">
       <DependentUpon>202511071731055_fixed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202601151903464_AddUserTypeToToken.cs" />
+    <Compile Include="Migrations\202601151903464_AddUserTypeToToken.Designer.cs">
+      <DependentUpon>202601151903464_AddUserTypeToToken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202601151919589_FixUserTypeRequiredTokenTable.cs" />
+    <Compile Include="Migrations\202601151919589_FixUserTypeRequiredTokenTable.Designer.cs">
+      <DependentUpon>202601151919589_FixUserTypeRequiredTokenTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AllContext.cs" />
     <Compile Include="Models\Notification.cs" />
@@ -115,6 +123,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202511071731055_fixed.resx">
       <DependentUpon>202511071731055_fixed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202601151903464_AddUserTypeToToken.resx">
+      <DependentUpon>202601151903464_AddUserTypeToToken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202601151919589_FixUserTypeRequiredTokenTable.resx">
+      <DependentUpon>202601151919589_FixUserTypeRequiredTokenTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

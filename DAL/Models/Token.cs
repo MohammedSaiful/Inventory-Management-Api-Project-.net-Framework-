@@ -21,5 +21,8 @@ namespace DAL.Models
         public string UserId {  get; set; }
 
         // add user type for role base login
+        [Required]
+        [StringLength (20)]
+        public string UserType { get; set; }
     }
 }

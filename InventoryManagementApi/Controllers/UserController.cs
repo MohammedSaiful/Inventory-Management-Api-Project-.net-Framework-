@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using InventoryManagementApi.AuthorizationFilter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,8 @@ namespace InventoryManagementApi.Controllers
     public class UserController : ApiController
     {
         [HttpGet]
+        [Logged]
+        [Role("admin", "staff")]
         [Route("All")]
         public HttpResponseMessage GetAllUser()
         {
@@ -27,6 +30,8 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("{id}")]
         public HttpResponseMessage GetUser(string id)
@@ -42,9 +47,11 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        [Logged]
+        [Role("admin")]
         [HttpPost]
         [Route("Create")]
-        public HttpResponseMessage CreateNotification(UserDTO u)
+        public HttpResponseMessage CreateUser(UserDTO u)
         {
             try
             {

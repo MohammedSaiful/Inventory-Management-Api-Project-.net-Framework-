@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="styleDashBoard.css">
+</head>
+
+<script>
+    var app = angular.module("my-app", []);
+
+    app.factory('interceptor', ['$q', '$window', '$injector', function ($q, $window, $injector) {
+        return {
+            request: function (config) {
+                var token = localStorage.getItem("tokenkey");
+                if (token) {
+                    config.headers.Authorization = token;
+                }
+                return config;
+            },
+            responseError: function (rejection) {
+                // Handle Token Expiry (401)
+                if (rejection.status === 401) {
+                    var refreshToken = localStorage.getItem("refreshtoken");
+                    if (refreshToken) {
+                        var $http = $injector.get('$http');
+
+                        return $http.post("https://localhost:44332/Api/Token/Refresh?refreshToken=" + refreshToken)
+                            .then(function (res) {
+                                localStorage.setItem("tokenkey", res.data.AccessToken);
+                                rejection.config.headers.Authorization = res.data.AccessToken;
+                                return $http(rejection.config);
+                            })
+                            .catch(function () {
+                                localStorage.clear();
+                                $window.location.href = "Login.html";
+                                return $q.reject(rejection);
+                            });
+                    }
+                }
+                // If 403, it means the user's role isn't allowed for that action
+                if (rejection.status === 403) {
+                    alert("Access Denied: You do not have permission for this action.");
+                }
+                return $q.reject(rejection);
+            }
+        };
+    }]);
+
+    app.config(function ($httpProvider) {
+        $httpProvider.interceptors.push('interceptor');
+    });
+
+    app.controller("DashboardCtrl", function ($scope, $http) {
+
+        $scope.summary = {};
+        $scope.errMsg = "";
+
+        /* Load dashboard summary */
+        $scope.loadSummary = function () {
+            $http.get("https://localhost:44332/Api/Dashboard/Summary")
+                .then(function (res) {
+                    $scope.summary = res.data;
+                }, function () {
+                    $scope.errMsg = "Failed to load dashboard data";
+                });
+        };
+
+        $scope.loadSummary();
+
+
+        $scope.UserName = "User"; // Default value
+        $scope.UserRole = "Role";
+
+        /* Function to get name from Token */
+        $scope.getUserInfo = function () {
+            var token = localStorage.getItem("tokenkey");
+            if (token) {
+                try {
+                    // JWT is [Header].[Payload].[Signature] -> need the Payload (index 1)
+                    var payload = JSON.parse(atob(token.split('.')[1]));
+
+                    // Check JWT Claim key. 
+                    debugger;
+                    $scope.UserName = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"] || "Cannot fatched User " /*payload.unique_name ||*/;
+                    $scope.UserRole = payload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+                } catch (e) {
+                    console.error("Error decoding token", e);
+                }
+            }
+        };
+        // Initialize user info
+        $scope.getUserInfo();
+
+        //to go other pages
+        $scope.go = function (page) {
+            window.location.href = page;
+        };
+
+        /* Logout */
+        $scope.logout = function () {
+            localStorage.clear();
+            window.location.href = "Login.html";
+        };
+    });
+</script>
+
+<body ng-app="my-app">
+    <div class="container" ng-controller="DashboardCtrl">
+
+        <!-- Logout -->
+        <button class="logout-btn" ng-click="logout()">Logout</button>
+
+        <h2>Inventory Dashboard</h2>
+
+        <div class="hello-text">Welcome, {{UserName}}</div>
+
+        <!-- Error -->
+        <div class="error" ng-if="errMsg">{{errMsg}}</div>
+
+        <!-- Dashboard Cards -->
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>Total Products</h3>
+                <p>{{summary.TotalProducts}}</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Inventory Value</h3>
+                <p>{{summary.TotalInventoryValue | number:2}}</p>
+            </div>
+
+            <div class="card">
+                <h3>Low Stock Items</h3>
+                <p>{{summary.LowStockCount}}</p>
+            </div>
+
+            <div class="card">
+                <h3>Today's Transactions</h3>
+                <p>{{summary.TotalTransactionsToday}}</p>
+            </div>
+
+            <div class="card" ng-click="go('ProductUpdated.html')">
+                <h3>All Products</h3>
+                <p>Press to View product list</p>
+            </div>
+
+            <div class="card" ng-click="go('Transaction.html')">
+                <h3>All Transactions</h3>
+                <p>Press to View transaction history</p>
+            </div>
+
+            <div class="card" ng-click="go('Supplier.html')">
+                <h3>All Product Suppliers</h3>
+                <p>Press to View suppliers</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

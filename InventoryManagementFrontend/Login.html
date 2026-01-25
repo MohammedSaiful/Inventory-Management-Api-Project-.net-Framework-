@@ -17,9 +17,17 @@
 				//debugger;
 				return config;
 			},
-			response: function (response) {
-				//debugger;
-				return response;
+			// response: function (response) {
+			// 	//debugger;
+			// 	return response;
+			// }
+			responseError: function (rejection) {
+				//If a request fails with 401, the token is likely dead.
+				if (rejection.status === 401) {
+					localStorage.removeItem("tokenkey");
+					window.location.href = "Login.html";
+				}
+				return Promise.reject(rejection);
 			}
 		};
 		return interceptor;
@@ -34,14 +42,17 @@
 			var v = $scope.l;
 
 			$http.post("https://localhost:44332/Api/Login", v).then(function (res) {
-				debugger;
-				localStorage.setItem("tokenkey", res.data.TokenKey);
-				//localStorage.setItem("username", res.data.username);
-				window.location.href = "ProductUpdated.html";
+				//debugger;
+				if (res.data && res.data.AccessToken) {
+					localStorage.setItem("tokenkey", res.data.AccessToken);
+					localStorage.setItem("refreshtoken", res.data.RefreshToken);
+					window.location.href = "DashBoard.html";
+				}
 			},
 				function (err) {
-					alert(err.data.Message);
-					debugger;
+					$scope.errMsg = err.data?.Msg || "Login Failed";
+					//alert(err.data.Msg);
+					//debugger;
 				});
 
 		};

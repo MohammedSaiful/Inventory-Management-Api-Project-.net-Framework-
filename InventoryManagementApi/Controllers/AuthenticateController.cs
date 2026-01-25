@@ -27,16 +27,39 @@ namespace InventoryManagementApi.Controllers
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, res); //Login Successfully
                 }
-                return Request.CreateResponse(HttpStatusCode.NotFound, new { Message = "User Not Found" });
+                return Request.CreateResponse(HttpStatusCode.Unauthorized, new { Msg = "Invalid Credentials" });
+                //return Request.CreateResponse(HttpStatusCode.NotFound, new { Msg = "User Not Found" });
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new {Message = ex.Message});
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new {Msg = ex.Message});
             }
         }
 
-        [Logged]
+        
         [HttpPost]
+        [Logged]
+        [Route("Api/Token/Refresh")]
+        public HttpResponseMessage Refresh(string refreshToken)
+        {
+            try
+            {
+                var res = AuthenService.RefreshToken(refreshToken);
+                if (res != null)
+                {
+                    return Request.CreateResponse(HttpStatusCode.OK, res);
+                }
+                return Request.CreateResponse(HttpStatusCode.Unauthorized, new { Msg = "Session expired. Please login again." });
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new{Msg= ex.Message});
+            }
+        }
+
+        
+        [HttpPost]
+        [Logged]
         [Route("Api/Logout")]
         public HttpResponseMessage Logout()
         {
@@ -48,7 +71,7 @@ namespace InventoryManagementApi.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message});
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Msg = ex.Message});
             }
         }
 

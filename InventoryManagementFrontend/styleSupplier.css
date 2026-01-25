@@ -1,0 +1,143 @@
+body {
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px gray;
+}
+
+h3,
+h4 {
+    text-align: center;
+    color: black;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: darkblue;
+}
+
+
+.hello-text {
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Dashboard button (top-left inside container) */
+.dashboard-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-btn:hover {
+    background-color: darkblue;
+}
+
+.supplier-form {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-text {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-row.buttons {
+    justify-content: center;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 8px 25px;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.error-msg {
+    text-align: center;
+    color: red;
+}
+
+.success-msg {
+    text-align: center;
+    color: green;
+}

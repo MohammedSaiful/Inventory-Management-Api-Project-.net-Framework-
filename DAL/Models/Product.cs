@@ -24,6 +24,8 @@ namespace DAL.Models
         public DateTime EntryDate { get; set; }
         public DateTime ExpiryDate { get; set; }
 
+        //Instead of removing data from the database added an IsDeleted flag
+        public bool IsDeleted { get; set; } = false;
 
         [ForeignKey("Supplier")]
         public int SupplierId { get; set; }

@@ -35,6 +35,11 @@ namespace DAL
             return new TransactionRepo();
         }
 
+        public static ITransactionFeature TransactionFeature()
+        {
+            return new TransactionRepo();
+        }
+
         public static IRepo<Notification, int, bool> NotificationData()
         {
             return new NotificationRepo();
@@ -52,5 +57,6 @@ namespace DAL
         {
             return new TokenRepo();
         }
+
     }
 }

@@ -81,7 +81,25 @@ namespace BLL.Services
             return GetMapper().Map<List<ProductDTO>>(data);
         }
 
+        // this method is not implemented in controller
+        public static object GetPaginated(int page, int size)
+        {
+            // Calculate how many records to skip
+            int skip = (page - 1) * size;
 
+            var repo = DataAccessFactory.ProductFeature();
+            var products = repo.GetPaginated(skip, size);
+            var totalCount = repo.GetTotalCount();
+
+            return new
+            {
+                TotalCount = totalCount,
+                TotalPages = (int)Math.Ceiling((double)totalCount / size),
+                CurrentPage = page,
+                PageSize = size,
+                Data = GetMapper().Map<List<ProductDTO>>(products)
+            };
+        }
 
         public static ProductTransactionDTO GetWithTransaction(int id)
         {

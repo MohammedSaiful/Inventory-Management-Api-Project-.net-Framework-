@@ -1,0 +1,220 @@
+/* Page background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px gray;
+    position: relative;
+}
+
+/* Page heading */
+h3,
+h4 {
+    text-align: center;
+    color: black;
+}
+
+
+.hello-text {
+    position: absolute;
+    top: 25px;
+    left: 150px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Dashboard button (top-left inside container) */
+.dashboard-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-btn:hover {
+    background-color: darkblue;
+}
+
+
+
+/* Logout button (top-right inside container) */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: darkblue;
+}
+
+/* Error & success messages */
+.error {
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    text-align: center;
+    color: green;
+    margin-bottom: 10px;
+}
+
+/* Transaction form */
+.tran-form {
+    width: 420px;
+    margin: 25px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Form labels */
+.tran-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Form inputs & select */
+.tran-form input,
+.tran-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+/* Submit button */
+.tran-form button[type="submit"] {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tran-form button[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+/* Cancel button */
+.tran-form .cancel {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tran-form .cancel:hover {
+    background-color: darkred;
+}
+
+/* Search */
+input[ng-model="searchText"] {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+/* Table header & cells */
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Table header */
+th {
+    background-color: blue;
+    color: white;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+/* Row hover */
+tr:hover {
+    background-color: lightblue;
+}
+
+/* Action buttons */
+td button {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Edit button */
+td button:first-child {
+    background-color: yellow;
+    color: black;
+}
+
+td button:first-child:hover {
+    background-color: gold;
+}
+
+/* Delete button */
+td button:last-child {
+    background-color: red;
+    color: white;
+}
+
+td button:last-child:hover {
+    background-color: darkred;
+}

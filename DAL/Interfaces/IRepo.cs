@@ -15,3 +15,5 @@ namespace DAL.Interfaces
         bool Delete(ID id);
     }
 }
+
+

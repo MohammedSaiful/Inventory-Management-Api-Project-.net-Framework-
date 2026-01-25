@@ -12,11 +12,16 @@ namespace DAL.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        [StringLength(100)]
         public string TokenKey { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }
+
+        [Required]
+        public string RefreshToken { get; set; } // GUID string for refreshing
+        [Required]
+        public DateTime ExpiredAt { get; set; } // Expiry for the Refresh Token
+
         [Required]
         public string UserId {  get; set; }
 

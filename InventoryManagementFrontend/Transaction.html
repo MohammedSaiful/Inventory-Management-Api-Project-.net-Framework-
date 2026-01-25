@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="styleTransaction.css">
+</head>
+
+<script>
+    var app = angular.module("my-app", []);
+
+    app.factory('interceptor', ['$q', '$window', '$injector', function ($q, $window, $injector) {
+        return {
+            request: function (config) {
+                var token = localStorage.getItem("tokenkey");
+                if (token) {
+                    config.headers.Authorization = token;
+                }
+                return config;
+            },
+            responseError: function (rejection) {
+                // Handle Token Expiry (401)
+                if (rejection.status === 401) {
+                    var refreshToken = localStorage.getItem("refreshtoken");
+                    if (refreshToken) {
+                        var $http = $injector.get('$http');
+                        // Attempt to get a new access token through refresh
+                        return $http.post("https://localhost:44332/Api/Token/Refresh?refreshToken=" + refreshToken)
+                            .then(function (res) {
+                                localStorage.setItem("tokenkey", res.data.AccessToken);
+                                rejection.config.headers.Authorization = res.data.AccessToken;
+                                return $http(rejection.config); // Retry original request
+                            })
+                            .catch(function () {
+                                localStorage.clear();
+                                $window.location.href = "Login.html";
+                                return $q.reject(rejection);
+                            });
+                    }
+                }
+                return $q.reject(rejection);
+            }
+        };
+    }]);
+
+    app.config(function ($httpProvider) {
+        $httpProvider.interceptors.push('interceptor');
+    });
+
+    app.controller("TransactionCtrl", function ($scope, $http, $timeout, $window) {
+
+        $scope.transactions = [];
+        $scope.form = {};
+        $scope.errMsg = "";
+        $scope.successMsg = "";
+
+        // clear messages after 3 seconds
+        var clearMsgs = function () {
+            $timeout(function () {
+                $scope.errMsg = "";
+                $scope.successMsg = "";
+            }, 3000);
+        };
+
+        /* Load all transactions */
+        $scope.loadTransactions = function () {
+            $http.get("https://localhost:44332/Api/Transaction/All")
+                .then(function (res) {
+                    $scope.transactions = res.data;
+                }, function (err) {
+                    $scope.errMsg = err.data?.Msg || "Failed to load transactions";
+                    clearMsgs();
+                });
+        };
+        $scope.loadTransactions();
+
+        /* Create or Update transaction */
+        $scope.saveTransaction = function () {
+            if ($scope.form.Id) {
+                // Update Logic
+                $http.put("https://localhost:44332/Api/Transaction/Update/" + $scope.form.Id, $scope.form)
+                    .then(function () {
+                        $scope.successMsg = "Transaction updated successfully!";
+                        $scope.form = {};
+                        $scope.loadTransactions();
+                        clearMsgs();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Msg || "Update failed";
+                        clearMsgs();
+                    });
+            } else {
+                // Create Logic
+                $http.post("https://localhost:44332/Api/Transaction/Create", $scope.form)
+                    .then(function () {
+                        $scope.successMsg = "Transaction created successfully!";
+                        $scope.form = {};
+                        $scope.loadTransactions();
+                        clearMsgs();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Msg || "Create failed";
+                        clearMsgs();
+                    });
+            }
+        };
+
+        /* Edit - Uses copy to prevent table changing while typing */
+        $scope.editTransaction = function (t) {
+            $scope.form = angular.copy(t);
+            $window.scrollTo(0, 0); // Scroll up to the form
+        };
+
+        /* Delete */
+        $scope.deleteTransaction = function (id) {
+            if (confirm("Are you sure you want to delete this transaction?")) {
+                $http.delete("https://localhost:44332/Api/Transaction/Delete/" + id)
+                    .then(function () {
+                        $scope.successMsg = "Transaction removed";
+                        $scope.loadTransactions();
+                        clearMsgs();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Msg || "Delete failed";
+                        clearMsgs();
+                    });
+            }
+        };
+
+
+        $scope.UserName = "User"; // Default value
+        $scope.UserRole = "Role";
+
+        /* Function to get name from Token */
+        $scope.getUserInfo = function () {
+            var token = localStorage.getItem("tokenkey");
+            if (token) {
+                try {
+                    // JWT is [Header].[Payload].[Signature] -> need the Payload (index 1)
+                    var payload = JSON.parse(atob(token.split('.')[1]));
+
+                    // Check JWT Claim key.
+                    //debugger;
+                    $scope.UserName = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"] || "Cannot fatched User " /*payload.unique_name ||*/;
+                    $scope.UserRole = payload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+                } catch (e) {
+                    console.error("Error decoding token", e);
+                }
+            }
+        };
+        // Initialize user info
+        $scope.getUserInfo();
+
+        /* dashboard */
+        $scope.goToDashboard = function () {
+            $window.location.href = "Dashboard.html";
+        };
+
+        /* Logout */
+        $scope.logout = function () {
+            $http.post("https://localhost:44332/Api/Logout").then(function (res) {
+                localStorage.clear();
+                $window.location.href = "Login.html";
+            }, function (err) {
+                localStorage.clear();
+                $window.location.href = "Login.html";
+            });
+        };
+    });
+</script>
+
+<body ng-app="my-app">
+    <div class="container" ng-controller="TransactionCtrl">
+
+        <!-- DashBoard -->
+        <button class="dashboard-btn" ng-click="goToDashboard()">Dashboard</button>
+
+        <!-- Logout -->
+        <button class="logout-btn" ng-click="logout()">Logout</button>
+
+        <h3>Transaction Management</h3>
+
+        <div class="hello-text">Welcome, {{UserName}}</div>
+
+        <!-- Messages -->
+        <div class="error" ng-if="errMsg">{{errMsg}}</div>
+        <div class="success" ng-if="successMsg">{{successMsg}}</div>
+
+        <!-- Transaction Form -->
+        <form ng-submit="saveTransaction()" class="tran-form">
+
+            <h4>{{form.Id ? 'Edit Transaction' : 'Create Transaction'}}</h4>
+
+            <label>Product ID</label>
+            <input type="number" ng-model="form.ProductId" required>
+
+            <label>Quantity</label>
+            <input type="number" ng-model="form.Tran_Qty" required>
+
+            <label>Transaction Type</label>
+            <select ng-model="form.Tran_Type" required>
+                <option value="IN">IN</option>
+                <option value="OUT">OUT</option>
+            </select>
+
+            <button type="submit">
+                {{form.Id ? 'Update' : 'Create'}}
+            </button>
+
+            <button type="button" class="cancel" ng-click="form={}">Cancel</button>
+        </form>
+
+        <!-- Transaction Table -->
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Product ID</th>
+                <th>User</th>
+                <th>Qty</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+
+            <input type="text" ng-model="searchText" placeholder="Search transactions...">
+            <tr ng-repeat="t in transactions | filter:searchText">
+                <td>{{t.Id}}</td>
+                <td>{{t.ProductId}}</td>
+                <td>{{t.UserName}}</td>
+                <td>{{t.Tran_Qty}}</td>
+                <td>{{t.Tran_Type}}</td>
+                <td>{{t.Tran_Date | date:'yyyy-MM-dd HH:mm'}}</td>
+                <td>
+                    <button ng-click="editTransaction(t)">Edit</button>
+                    <button ng-click="deleteTransaction(t.Id)" ng-if="UserRole === 'admin'">Delete</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

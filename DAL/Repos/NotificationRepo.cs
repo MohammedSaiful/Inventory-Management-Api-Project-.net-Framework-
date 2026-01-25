@@ -2,6 +2,7 @@
 using DAL.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,14 +43,21 @@ namespace DAL.Repos
         {
             if (product.Quantity < threshold)
             {
-                var notify = new Notification
+                // Check if a notification already exists for today to avoid spamming
+                var alreadyNotified = db.Notifications.Any(n => n.ProductId == product.Id &&
+                                      DbFunctions.TruncateTime(n.N_Date) == DbFunctions.TruncateTime(DateTime.Now));
+
+                if (!alreadyNotified)
                 {
-                    Massage = product.Name + " is low. (" + product.Quantity + " left)",
-                    N_Date = DateTime.Now,
-                    ProductId = product.Id
-                };
-                db.Notifications.Add(notify);
-                return db.SaveChanges() > 0;
+                    var notify = new Notification
+                    {
+                        Massage = $"{product.Name} is running low! Current stock: {product.Quantity}",
+                        ProductId = product.Id,
+                        N_Date = DateTime.Now
+                    };
+                    db.Notifications.Add(notify);
+                    return db.SaveChanges() > 0;
+                }
             }
             return false;
         }

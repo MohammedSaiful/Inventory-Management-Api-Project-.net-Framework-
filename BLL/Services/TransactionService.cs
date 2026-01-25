@@ -59,7 +59,15 @@ namespace BLL.Services
             transaction.Tran_Date = DateTime.Now;
             var tran = GetMapper().Map<Transaction>(transaction);
 
-            return DataAccessFactory.TransactionData().Create(tran);
+
+            var res = DataAccessFactory.TransactionData().Create(tran);
+
+            if (res)
+            {
+                //  Trigger Low Stock Check (Threshold = 5)
+                NotificationService.LowNotification(GetMapper().Map<ProductDTO>(product));
+            }
+            return res;
         }
 
         public static bool Update(TransactionDTO transaction)
@@ -99,6 +107,30 @@ namespace BLL.Services
         public static bool Delete(int id)
         {
             return DataAccessFactory.TransactionData().Delete(id);
+        }
+
+
+        public static List<TransactionDTO> GetByUser(string username)
+        {
+            var data = DataAccessFactory.TransactionFeature().GetUser(username);
+            return GetMapper().Map<List<TransactionDTO>>(data);
+        }
+
+        public static List<TransactionDTO> GetByProduct(int productId)
+        {
+            var data = DataAccessFactory.TransactionFeature().GetProduct(productId);
+            return GetMapper().Map<List<TransactionDTO>>(data);
+        }
+
+        public static List<TransactionDTO> GetByType(string type)
+        {
+            var data = DataAccessFactory.TransactionFeature().GetType(type);
+            return GetMapper().Map<List<TransactionDTO>>(data);
+        }
+
+        public static int GetCurrentStock(int productId)
+        {
+            return DataAccessFactory.TransactionFeature().GetTotalStock(productId);
         }
     }
 }

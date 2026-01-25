@@ -7,9 +7,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace InventoryManagementApi.Controllers
 {
+    [EnableCors("*", "*", "*")]
     [RoutePrefix("Api/Transaction")]
     public class TransactionController : ApiController
     {
@@ -91,6 +93,57 @@ namespace InventoryManagementApi.Controllers
             {
                 tran.Id = id;
                 var data = TransactionService.Update(tran);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [Logged]
+        [Role("admin", "staff")]
+        [HttpGet]
+        [Route("User/{username}")]
+        public HttpResponseMessage GetByUser(string username)
+        {
+            try
+            {
+                var data = TransactionService.GetByUser(username);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [Logged]
+        [Role("admin", "staff")]
+        [HttpGet]
+        [Route("Product/{id}")]
+        public HttpResponseMessage GetByProduct(int id)
+        {
+            try
+            {
+                var data = TransactionService.GetByProduct(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [Logged]
+        [Role("admin", "staff")]
+        [HttpGet]
+        [Route("Type/{type}")]
+        public HttpResponseMessage GetByType(string type)
+        {
+            try
+            {
+                var data = TransactionService.GetByType(type);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)

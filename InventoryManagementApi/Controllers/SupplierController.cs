@@ -1,17 +1,24 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using InventoryManagementApi.AuthorizationFilter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace InventoryManagementApi.Controllers
 {
+    [EnableCors("*", "*", "*")]
+    [Logged]
     [RoutePrefix("Api/Supplier")]
     public class SupplierController : ApiController
     {
+        //Show all suppliers
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("All")]
         public HttpResponseMessage GetAllSupplier()
@@ -27,6 +34,9 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        //search specific supplier by id
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("{id}")]
         public HttpResponseMessage GetSupplier(int id)
@@ -42,6 +52,9 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        //will show products which supplied by specific supplier
+        [Logged]
+        [Role("admin", "staff")]
         [HttpGet]
         [Route("{id}/Products")]
         public HttpResponseMessage SupplierProduct(int id)
@@ -57,6 +70,9 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        // will create new supplier
+        [Logged]
+        [Role("admin")]
         [HttpPost]
         [Route("Create")]
         public HttpResponseMessage CreateSupplier(SupplierDTO s)
@@ -72,6 +88,9 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        //Delete specific supplier
+        [Logged]
+        [Role("admin")]
         [HttpDelete]
         [Route("Delete/{id}")]
         public HttpResponseMessage DeleteSupplier(int id)
@@ -87,6 +106,9 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+        //update specific supplier information
+        [Logged]
+        [Role("admin")]
         [HttpPut]
         [Route("Update/{id}")]
         public HttpResponseMessage UpdateSupplier(int id, SupplierDTO sup)

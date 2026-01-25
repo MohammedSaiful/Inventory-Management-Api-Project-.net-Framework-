@@ -12,5 +12,8 @@ namespace DAL.Interfaces
         List<Product> GetCategory(string category);
         List<Product> GetLowStock(int threshold);
         List<Product> GetExpiredProducts();
+
+        List<Product> GetPaginated(int skip, int take);
+        int GetTotalCount();
     }
 }

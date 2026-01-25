@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="styleSupplier.css">
+</head>
+
+<script>
+    var app = angular.module("my-app", []);
+
+    app.factory('interceptor', ['$q', '$window', '$injector', function ($q, $window, $injector) {
+        return {
+            request: function (config) {
+                var token = localStorage.getItem("tokenkey");
+                if (token) {
+                    config.headers.Authorization = token;
+                }
+                return config;
+            },
+            responseError: function (rejection) {
+                // Handle Token Expiry (401)
+                if (rejection.status === 401) {
+                    var refreshToken = localStorage.getItem("refreshtoken");
+                    if (refreshToken) {
+                        var $http = $injector.get('$http');
+                        // Attempt to get a new access token
+                        return $http.post("https://localhost:44332/Api/Token/Refresh?refreshToken=" + refreshToken)
+                            .then(function (res) {
+                                localStorage.setItem("tokenkey", res.data.AccessToken);
+                                rejection.config.headers.Authorization = res.data.AccessToken;
+                                return $http(rejection.config); // Retry original request
+                            })
+                            .catch(function () {
+                                localStorage.clear();
+                                $window.location.href = "Login.html";
+                                return $q.reject(rejection);
+                            });
+                    }
+                }
+                return $q.reject(rejection);
+            }
+        };
+    }]);
+
+    app.config(function ($httpProvider) {
+        $httpProvider.interceptors.push('interceptor');
+    });
+
+    app.controller("SupplierCtlr", function ($scope, $http) {
+        $scope.suppliers = [];
+        $scope.products = [];
+        $scope.form = {};
+        $scope.errMsg = "";
+        $scope.successMsg = "";
+
+        //  Get current user role to show/hide buttons in HTML
+        $scope.userRole = localStorage.getItem("userrole"); // save this during login
+
+        $scope.loadSuppliers = function () {
+            $http.get("https://localhost:44332/Api/Supplier/All")
+                .then(function (res) {
+                    $scope.suppliers = res.data;
+                    $scope.errMsg = "";
+                }, function (err) {
+                    $scope.errMsg = err.data?.Msg || "Failed to load suppliers";
+                });
+        };
+
+        // Safety check to prevent empty requests on reload
+        $scope.init = function () {
+            if (localStorage.getItem("tokenkey")) {
+                $scope.loadSuppliers();
+            } else {
+                window.location.href = "Login.html";
+            }
+        };
+
+        $scope.saveSupplier = function () {
+            $scope.errMsg = "";
+            $scope.successMsg = "";
+
+            if ($scope.form.Id) {
+                $http.put("https://localhost:44332/Api/Supplier/Update/" + $scope.form.Id, $scope.form)
+                    .then(function () {
+                        $scope.successMsg = "Supplier updated successfully";
+                        $scope.form = {};
+                        $scope.loadSuppliers();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Message || err.data?.Msg || "Update failed";
+                    });
+            } else {
+                $http.post("https://localhost:44332/Api/Supplier/Create", $scope.form)
+                    .then(function () {
+                        $scope.successMsg = "Supplier created successfully";
+                        $scope.form = {};
+                        $scope.loadSuppliers();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Message || err.data?.Msg || "Create failed";
+                    });
+            }
+        };
+
+        $scope.editSupplier = function (s) {
+            $scope.form = angular.copy(s);
+            $scope.errMsg = "";
+            $scope.successMsg = "";
+        };
+
+        $scope.deleteSupplier = function (id) {
+            if (confirm("Are you sure you want to delete this supplier?")) {
+                $http.delete("https://localhost:44332/Api/Supplier/Delete/" + id)
+                    .then(function () {
+                        $scope.successMsg = "Supplier deleted successfully";
+                        $scope.loadSuppliers();
+                    }, function (err) {
+                        $scope.errMsg = err.data?.Message || "Delete failed";
+                    });
+            }
+        };
+
+        $scope.viewProducts = function (id) {
+            $http.get("https://localhost:44332/Api/Supplier/" + id + "/Products")
+                .then(function (res) {
+                    // Match the 'Products' property returned by SupplierService.GetWithProducts
+                    $scope.products = res.data.Products;
+                    if ($scope.products.length === 0) {
+                        $scope.errMsg = "This supplier has no products.";
+                    }
+                }, function (err) {
+                    $scope.errMsg = "Failed to load products";
+                });
+        };
+
+        //For showing user name left top
+        $scope.UserName = "User"; // Default value
+        $scope.UserRole = "Role";
+
+        /* Function to get name from Token */
+        $scope.getUserInfo = function () {
+            var token = localStorage.getItem("tokenkey");
+            if (token) {
+                try {
+                    // JWT is [Header].[Payload].[Signature] -> need the Payload (index 1)
+                    var payload = JSON.parse(atob(token.split('.')[1]));
+
+                    // Check JWT Claim key.
+                    debugger;
+                    $scope.UserName = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"] || "Cannot fatched User " /*payload.unique_name ||*/;
+                    $scope.UserRole = payload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+                } catch (e) {
+                    console.error("Error decoding token", e);
+                }
+            }
+        };
+        // Initialize user info
+        $scope.getUserInfo();
+
+        /* dashboard */
+        $scope.goToDashboard = function () {
+            $window.location.href = "DashBoard.html";
+        };
+
+        $scope.logout = function () {
+            localStorage.clear();
+            window.location.href = "Login.html";
+        };
+
+        // Start the application
+        $scope.init();
+    });
+</script>
+
+<body ng-app="my-app">
+    <div class="container" ng-controller="SupplierCtlr">
+
+
+        <!-- DashBoard -->
+        <button class="dashboard-btn" ng-click="goToDashboard()">Dashboard</button>
+
+        <!-- Logout -->
+        <button class="logout-btn" ng-click="logout()">Logout</button>
+
+        <h3>Supplier Management</h3>
+
+        <div class="hello-text">Welcome, {{UserName}}</div>
+
+        <div class="error-msg" ng-if="errMsg">{{errMsg}}</div>
+        <div class="success-msg" ng-if="successMsg">{{successMsg}}</div>
+
+        <!-- Supplier Form -->
+        <h4>{{form.Id ? "Edit Supplier" : "Create Supplier"}}</h4>
+
+        <form class="supplier-form" ng-submit="saveSupplier()">
+
+            <div class="form-row">
+                <div class="form-col">
+                    <div class="label-text">Supplier Name</div>
+                    <input type="text" ng-model="form.Name" required>
+                </div>
+
+                <div class="form-col">
+                    <div class="label-text">Email</div>
+                    <input type="text" ng-model="form.Email">
+                </div>
+            </div>
+
+            <div class="form-row buttons">
+                <input type="submit" value="{{form.Id ? 'Update' : 'Create'}}">
+            </div>
+
+            <div class="form-row buttons">
+                <button type="button" ng-click="form={}">Cancel</button>
+            </div>
+
+        </form>
+
+        <!-- Supplier Table -->
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+
+            <tr ng-repeat="s in suppliers">
+                <td>{{s.Id}}</td>
+                <td>{{s.Name}}</td>
+                <td>{{s.Email}}</td>
+                <td>
+                    <button ng-click="editSupplier(s)">Edit</button>
+                    <button ng-click="deleteSupplier(s.Id)">Delete</button>
+                    <button ng-click="viewProducts(s.Id)">Products</button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Supplier Products -->
+        <h4 ng-if="products.length">Supplied Products</h4>
+
+        <table ng-if="products.length" border="1">
+            <tr>
+                <th>Product ID</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+            </tr>
+
+            <tr ng-repeat="p in products">
+                <td>{{p.Id}}</td>
+                <td>{{p.Name}}</td>
+                <td>{{p.Category}}</td>
+                <td>{{p.Quantity}}</td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

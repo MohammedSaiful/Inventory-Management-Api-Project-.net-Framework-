@@ -25,21 +25,30 @@ namespace DAL.Repos
             throw new NotImplementedException();
         }
 
-        public Token Get(string id)
+        public Token Get(string tokenkey)
         {
-            return db.Tokens.FirstOrDefault(t => t.TokenKey.Equals(id));
+            return db.Tokens.FirstOrDefault(t => t.TokenKey.Equals(tokenkey));
         }
 
         public List<Token> GetAll()
         {
-            throw new NotImplementedException();
+            return db.Tokens.ToList();
         }
 
         public Token Update(Token obj)
         {
-            var token = Get(obj.TokenKey);
-            db.Entry(token).CurrentValues.SetValues(obj);
-            if(db.SaveChanges()>0) return token;
+            //var token = Get(obj.TokenKey);
+            var token = db.Tokens.FirstOrDefault(t => t.Id == obj.Id);
+            if (token != null)
+            {
+               
+                db.Entry(token).CurrentValues.SetValues(obj);
+
+                if (db.SaveChanges() > 0)
+                {
+                    return token;
+                }
+            }
             return null;
         }
 

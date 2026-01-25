@@ -24,15 +24,16 @@ h4 {
     color: black;
 }
 
-/*
-.welcome-text {
+
+.hello-text {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 25px;
+    left: 150px;
     font-weight: bold;
     color: black;
 }
-*/
+
+
 /* Logout button on top-right */
 button.logout-btn {
     position: absolute;
@@ -48,10 +49,30 @@ button.logout-btn:hover {
     background-color: darkblue;
 }
 
-/* Search input */
+/* Dashboard button (top-left inside container) */
+.dashboard-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-btn:hover {
+    background-color: darkblue;
+}
+
+/* Search */
 input[ng-model="searchText"] {
-    width: 100%;
+    display: block;
+    width: 50%;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid black;
@@ -204,4 +225,42 @@ td button {
 
 .cancel-row button:hover {
     background-color: darkred;
+}
+
+
+
+
+
+
+/* New Buttons Styling */
+.history-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.alerts-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Detail Box Styling (History/Alerts) */
+.detail-box {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.alert-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.detail-box button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
 }

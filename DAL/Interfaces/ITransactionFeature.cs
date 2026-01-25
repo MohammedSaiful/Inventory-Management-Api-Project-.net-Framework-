@@ -13,5 +13,8 @@ namespace DAL.Interfaces
         List<Transaction> GetProduct(int productId);
         List<Transaction> GetType(string type);
         int GetTotalStock(int productId);
+
+        // top selling product
+        List<Transaction> GetTopSelling();
     }
 }

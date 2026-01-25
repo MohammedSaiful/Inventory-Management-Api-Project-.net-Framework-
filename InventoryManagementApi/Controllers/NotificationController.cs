@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using InventoryManagementApi.AuthorizationFilter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace InventoryManagementApi.Controllers
     public class NotificationController : ApiController
     {
         [HttpGet]
+        [Logged]
+        [Role("admin", "staff")]
         [Route("All")]
         public HttpResponseMessage GetAllNotification()
         {
@@ -27,6 +30,8 @@ namespace InventoryManagementApi.Controllers
         }
 
         [HttpGet]
+        [Logged]
+        [Role("admin", "staff")]
         [Route("{id}")]
         public HttpResponseMessage GetNotifiation(int id)
         {
@@ -42,6 +47,7 @@ namespace InventoryManagementApi.Controllers
         }
 
         [HttpPost]
+        [Logged]
         [Route("Create")]
         public HttpResponseMessage CreateNotification(NotificationDTO n)
         {
@@ -56,7 +62,11 @@ namespace InventoryManagementApi.Controllers
             }
         }
 
+
         [HttpDelete]
+        [Logged]
+        [Logged]
+        [Role("admin")]
         [Route("Delete/{id}")]
         public HttpResponseMessage DeleteNotification(int id)
         {

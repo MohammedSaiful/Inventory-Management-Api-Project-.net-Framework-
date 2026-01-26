@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>Transactions</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <link rel="stylesheet" href="styleTransaction.css">
 </head>
@@ -151,6 +154,51 @@
         // Initialize user info
         $scope.getUserInfo();
 
+
+        //pdf download
+        $scope.downloadProductPDF = function (productId) {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Filter data if a specific productId is provided
+            var dataToExport = productId
+                ? $scope.transactions.filter(t => t.ProductId === productId)
+                : $scope.transactions;
+
+            if (dataToExport.length === 0) {
+                alert("No transactions found for this product.");
+                return;
+            }
+
+            // Title & Header
+            doc.setFontSize(18);
+            var title = productId ? "Transaction Report: Product #" + productId : "All Transactions Report";
+            doc.text(title, 14, 20);
+
+            doc.setFontSize(11);
+            doc.setTextColor(100);
+            doc.text("Generated: " + new Date().toLocaleString(), 14, 28);
+
+            const columns = ["ID", "User", "Qty", "Type", "Date"];
+            const rows = dataToExport.map(t => [
+                t.Id,
+                t.UserName,
+                t.Tran_Qty,
+                t.Tran_Type,
+                new Date(t.Tran_Date).toLocaleString()
+            ]);
+
+            doc.autoTable({
+                head: [columns],
+                body: rows,
+                startY: 35,
+                theme: 'striped'
+            });
+
+            var fileName = productId ? "Product_" + productId + "_Report.pdf" : "Full_Report.pdf";
+            doc.save(fileName);
+        };
+
         /* dashboard */
         $scope.goToDashboard = function () {
             $window.location.href = "Dashboard.html";
@@ -232,6 +280,8 @@
                 <td>{{t.Tran_Date | date:'yyyy-MM-dd HH:mm'}}</td>
                 <td>
                     <button ng-click="editTransaction(t)">Edit</button>
+                    <button ng-click="downloadProductPDF(t.ProductId)"
+                        style="background-color: #3498db; color: white;">PDF</button>
                     <button ng-click="deleteTransaction(t.Id)" ng-if="UserRole === 'admin'">Delete</button>
                 </td>
             </tr>

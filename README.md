@@ -41,3 +41,26 @@ The system utilizes an advanced JWT Refresh Mechanism:
    2. Calls the /Refresh endpoint to get a new token.
    3. Retries the original request with the new token.
    4. Logs the user out only if the Refresh Token is also expired.
+
+## 📸 Project Preview
+
+### Dashboard
+![Dashboard Screenshot](./Screenshots/Dashboard.jpg)
+
+### Transaction 
+![Transaction Screenshot](./Screenshots/Transactions.jpg)
+
+### Product
+![Dashboard Screenshot](./Screenshots/Product.jpg)
+
+### Product history notification
+![Transaction Screenshot](./Screenshots/Product_history_notification.jpg)
+
+### Suppliers
+![Transaction Screenshot](./Screenshots/Suppliers.jpg)
+
+### Supplier with Product
+![Transaction Screenshot](./Screenshots/Supplier_with_Product.jpg)
+
+### Login
+![Transaction Screenshot](./Screenshots/Login.jpg)

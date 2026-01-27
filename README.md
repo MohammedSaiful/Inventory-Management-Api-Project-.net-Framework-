@@ -13,7 +13,7 @@ This system enables businesses to manage products and suppliers while maintainin
 ## Technology Stack
 ### Backend (.NET Web API)
 * Framework: ASP.NET Web API 2
-* Architecture: 3-Layer Pattern (DAL, BLL, Web API)
+* Architecture: 3-Layer Pattern (DAL, BLL, Web API), SOLID Principles
 * ORM: Entity Framework 6 (Code First)
 * Database: Microsoft SQL Server
 * Mapping: AutoMapper (for DTO to Entity conversion)
@@ -65,3 +65,4 @@ The system utilizes an advanced JWT Refresh Mechanism:
 ### Login
 
 ![Transaction Screenshot](./Screenshots/Login.jpg)
+

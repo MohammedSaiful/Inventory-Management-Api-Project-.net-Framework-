@@ -129,7 +129,7 @@ Solution 'InventoryManagementApi'
 ```
 
 
-## ## Project Preview
+## Project Preview
 
 ### Dashboard
 ![Dashboard Screenshot](./Screenshots/Dashboard.jpg)

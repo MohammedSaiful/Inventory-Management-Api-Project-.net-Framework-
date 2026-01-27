@@ -80,7 +80,7 @@ namespace BLL.Services
             // Search for the refresh token in the database
             var session = allTokens.FirstOrDefault(t => t.RefreshToken == rfToken && t.DeletedAt == null);
 
-            // Check if session exists and if the Refresh Token itself is still valid (ExpiredAt from migration)
+            // Check if session exists and if the Refresh Token itself is still valid (ExpiredAt )
             if (session != null && session.ExpiredAt > DateTime.Now)
             {
                 // Generate a brand new JWT

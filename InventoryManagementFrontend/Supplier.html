@@ -55,7 +55,7 @@
         $scope.successMsg = "";
 
         //  Get current user role to show/hide buttons in HTML
-        $scope.userRole = localStorage.getItem("userrole"); // save this during login
+        // $scope.userRole = localStorage.getItem("userrole"); // save this during login
 
         $scope.loadSuppliers = function () {
             $http.get("https://localhost:44332/Api/Supplier/All")

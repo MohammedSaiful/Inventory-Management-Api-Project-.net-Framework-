@@ -82,7 +82,7 @@
             if (token) {
                 try {
                     var payload = JSON.parse(atob(token.split('.')[1]));
-                    // Microsoft Schema Keys
+                    // Microsoft Schema Keys to holding usen name nad user role
                     $scope.UserName = payload["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"] || "User";
                     $scope.UserRole = payload["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
                 } catch (e) {

@@ -34,7 +34,7 @@ namespace InventoryManagementApi.AuthorizationFilter
                 return;
             }
 
-            // If we reach here, the token is either expired or deleted in DB
+            // If reach here, the token is either expired or deleted in DB
             actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized,
                 new { Msg = "Invalid or Expired Session" });
         }

@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|c:\\users\\islam\\downloads\\advanced .net\\.netpractice\\inventorymanagementapi\\inventorymanagementapi\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|c:\\users\\islam\\downloads\\advanced .net\\.netpractice\\inventorymanagementapi\\inventorymanagementapi\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,76 +31,56 @@
       "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\authorizationfilter\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\authorizationfilter\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\authorizationfilter\\logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\authorizationfilter\\logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\suppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\iuserfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iuserfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\dtos\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\repos\\supplierrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\supplierrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\itransactionfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\itransactionfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\isupplierfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\isupplierfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\repos\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\irepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\iproductfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iproductfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\inotificationfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\inotificationfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\repos\\tokenrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\tokenrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\iauthen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iauthen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\supplierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,32 +91,16 @@
       "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\authorizationfilter\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\authorizationfilter\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\dashboardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\authorizationfilter\\logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\authorizationfilter\\logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\services\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\services\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\dtos\\usertransactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,6 +113,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\transactiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\dtos\\supplierproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,6 +143,46 @@
       "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\notificationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\bll\\dtos\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F041A575-308A-4D01-853C-428281613ABE}|BLL\\BLL.csproj|solutionrelative:bll\\dtos\\dashboarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\repos\\supplierrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\supplierrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\repos\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\repo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\repos\\tokenrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\tokenrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\dataaccessfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\inventorymanagementapi\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8546D46-F016-47EF-8EE4-AA667A2911D3}|InventoryManagementApi\\InventoryManagementApi.csproj|solutionrelative:inventorymanagementapi\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -175,32 +199,8 @@
       "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\repos\\notificationrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\iuserfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iuserfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\itransactionfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\itransactionfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\iauthen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iauthen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\inotificationfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\inotificationfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\interfaces\\iproductfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\interfaces\\iproductfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\allcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\allcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|solutionrelative:dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6EC0FCF2-A451-446F-9984-3FAF53D21668}|DAL\\DAL.csproj|C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\dal\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -262,60 +262,84 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AuthenticateController.cs",
               "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\AuthenticateController.cs",
               "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\AuthenticateController.cs",
               "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\AuthenticateController.cs",
               "RelativeToolTip": "InventoryManagementApi\\Controllers\\AuthenticateController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwD0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAA1wD0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-07T13:25:37.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "InventoryManagementApi\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwCoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T18:25:37.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "NotificationController.cs",
               "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\NotificationController.cs",
               "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\NotificationController.cs",
               "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\NotificationController.cs",
               "RelativeToolTip": "InventoryManagementApi\\Controllers\\NotificationController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwEcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwEcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T12:42:01.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T12:42:01.82Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "InventoryManagementApi\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAgwBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T17:19:55.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SupplierController.cs",
               "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\SupplierController.cs",
               "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\SupplierController.cs",
               "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\SupplierController.cs",
               "RelativeToolTip": "InventoryManagementApi\\Controllers\\SupplierController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAowBoAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAowBoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-06T17:18:31.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\TransactionController.cs",
               "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\TransactionController.cs",
               "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\TransactionController.cs",
               "RelativeToolTip": "InventoryManagementApi\\Controllers\\TransactionController.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAAAJYAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAcwJYAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T12:41:44.16Z"
+              "WhenOpened": "2025-10-07T12:41:44.16Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\UserController.cs",
@@ -327,135 +351,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "InventoryManagementApi\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T18:25:37.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "InventoryManagementApi\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "InventoryManagementApi\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAowBEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T17:19:55.73Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\User.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\User.cs",
-              "RelativeToolTip": "DAL\\Models\\User.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Role.cs",
+              "RelativeDocumentMoniker": "InventoryManagementApi\\AuthorizationFilter\\Role.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Role.cs",
+              "RelativeToolTip": "InventoryManagementApi\\AuthorizationFilter\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T10:17:21.493Z"
+              "WhenOpened": "2026-01-14T10:04:02.055Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "DashboardService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\DashboardService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\DashboardService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\DashboardService.cs",
-              "RelativeToolTip": "BLL\\Services\\DashboardService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAvAAAAAAAAAA==",
+              "Title": "Logged.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
+              "RelativeDocumentMoniker": "InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
+              "RelativeToolTip": "InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwCQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T18:16:20.756Z"
+              "WhenOpened": "2025-11-12T15:18:44.682Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "DashboardDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\DashboardDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\DashboardDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\DashboardDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\DashboardDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Notification.cs",
+              "RelativeToolTip": "DAL\\Models\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T18:15:12.167Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IRepo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\IRepo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IRepo.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\IRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:19:51.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Repo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\Repo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\Repo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\Repo.cs",
-              "RelativeToolTip": "DAL\\Repos\\Repo.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T10:27:14.428Z"
+              "WhenOpened": "2025-10-02T10:18:28.668Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "SupplierRepo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\SupplierRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\SupplierRepo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\SupplierRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\SupplierRepo.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wCAAAAAmAAAAAAAAAA==",
+              "Title": "IUserFeature.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IUserFeature.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IUserFeature.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IUserFeature.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IUserFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:33:27.815Z"
+              "WhenOpened": "2025-10-04T18:25:44.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Supplier.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Supplier.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Supplier.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Supplier.cs",
-              "RelativeToolTip": "DAL\\Models\\Supplier.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "ITransactionFeature.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\ITransactionFeature.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\ITransactionFeature.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\ITransactionFeature.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\ITransactionFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T10:17:35.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\JwtService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\JwtService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\JwtService.cs",
-              "RelativeToolTip": "BLL\\Services\\JwtService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA4wBsAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T17:57:00.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "TokenRepo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TokenRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\TokenRepo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TokenRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\TokenRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:42:14.604Z"
+              "WhenOpened": "2025-10-04T18:27:03.061Z"
             },
             {
               "$type": "Document",
@@ -471,367 +423,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AuthenService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\AuthenService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\AuthenService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\AuthenService.cs",
-              "RelativeToolTip": "BLL\\Services\\AuthenService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwF8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T08:45:28.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TokenDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TokenDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\TokenDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TokenDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\TokenDTO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T06:00:37.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SupplierService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\SupplierService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\SupplierService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\SupplierService.cs",
-              "RelativeToolTip": "BLL\\Services\\SupplierService.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAIwDYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:46:56.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DataAccessFactory.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\DataAccessFactory.cs",
-              "RelativeDocumentMoniker": "DAL\\DataAccessFactory.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\DataAccessFactory.cs",
-              "RelativeToolTip": "DAL\\DataAccessFactory.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAwDgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T10:00:55.807Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\ProductService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\ProductService.cs",
-              "RelativeToolTip": "BLL\\Services\\ProductService.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAUwGsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:46:28.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\NotificationService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\NotificationService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\NotificationService.cs",
-              "RelativeToolTip": "BLL\\Services\\NotificationService.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAywDcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:47:34.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Token.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Token.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Token.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Token.cs",
-              "RelativeToolTip": "DAL\\Models\\Token.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T19:13:53.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Logged.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
-              "RelativeDocumentMoniker": "InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
-              "RelativeToolTip": "InventoryManagementApi\\AuthorizationFilter\\Logged.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAqwDYAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T15:18:44.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Role.cs",
-              "RelativeDocumentMoniker": "InventoryManagementApi\\AuthorizationFilter\\Role.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\AuthorizationFilter\\Role.cs",
-              "RelativeToolTip": "InventoryManagementApi\\AuthorizationFilter\\Role.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAqwDIAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T10:04:02.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Product.cs",
-              "RelativeToolTip": "DAL\\Models\\Product.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwCUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T10:17:52.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Models\\LoginModel.cs",
-              "RelativeDocumentMoniker": "InventoryManagementApi\\Models\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Models\\LoginModel.cs",
-              "RelativeToolTip": "InventoryManagementApi\\Models\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T16:21:58.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\UserService.cs",
-              "RelativeToolTip": "BLL\\Services\\UserService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAcwCUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:46:12.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TransactionService.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\TransactionService.cs",
-              "RelativeDocumentMoniker": "BLL\\Services\\TransactionService.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\TransactionService.cs",
-              "RelativeToolTip": "BLL\\Services\\TransactionService.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAUwIIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:47:13.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UserTransactionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserTransactionDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\UserTransactionDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserTransactionDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\UserTransactionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T17:22:32.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:28:20.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "TransactionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TransactionDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\TransactionDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TransactionDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\TransactionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:29:08.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "SupplierProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierProductDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\SupplierProductDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierProductDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\SupplierProductDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T17:22:20.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "SupplierDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\SupplierDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\SupplierDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:28:54.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ProductTransactionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductTransactionDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\ProductTransactionDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductTransactionDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\ProductTransactionDTO.cs",
+              "DocumentIndex": 13,
+              "Title": "IRepo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IRepo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IRepo.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IRepo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T17:21:37.436Z"
+              "WhenOpened": "2025-10-04T13:19:51.326Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "ProductNotifiactionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductNotifiactionDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\ProductNotifiactionDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductNotifiactionDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\ProductNotifiactionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T17:21:10.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ProductDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\ProductDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\ProductDTO.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:28:38.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "NotificationDTO.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\NotificationDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\DTOs\\NotificationDTO.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\NotificationDTO.cs",
-              "RelativeToolTip": "BLL\\DTOs\\NotificationDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-05T13:29:26.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "UserRepo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\UserRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\UserRepo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\UserRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\UserRepo.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwC4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:33:12.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "TransactionRepo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TransactionRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\TransactionRepo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TransactionRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\TransactionRepo.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAiwE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:34:06.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ProductRepo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\ProductRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\ProductRepo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\ProductRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\ProductRepo.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAqwEwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:33:48.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "NotificationRepo.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\NotificationRepo.cs",
-              "RelativeDocumentMoniker": "DAL\\Repos\\NotificationRepo.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\NotificationRepo.cs",
-              "RelativeToolTip": "DAL\\Repos\\NotificationRepo.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAmwEIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T13:34:52.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "IUserFeature.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IUserFeature.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\IUserFeature.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IUserFeature.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\IUserFeature.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T18:25:44.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ITransactionFeature.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\ITransactionFeature.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\ITransactionFeature.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\ITransactionFeature.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\ITransactionFeature.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T18:27:03.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "IAuthen.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IAuthen.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\IAuthen.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IAuthen.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\IAuthen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T17:28:04.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "INotificationFeature.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\INotificationFeature.cs",
-              "RelativeDocumentMoniker": "DAL\\Interfaces\\INotificationFeature.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\INotificationFeature.cs",
-              "RelativeToolTip": "DAL\\Interfaces\\INotificationFeature.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-04T18:27:40.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 14,
               "Title": "IProductFeature.cs",
               "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IProductFeature.cs",
               "RelativeDocumentMoniker": "DAL\\Interfaces\\IProductFeature.cs",
@@ -843,7 +447,415 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "INotificationFeature.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\INotificationFeature.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\INotificationFeature.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\INotificationFeature.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\INotificationFeature.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T18:27:40.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAuthen.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IAuthen.cs",
+              "RelativeDocumentMoniker": "DAL\\Interfaces\\IAuthen.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Interfaces\\IAuthen.cs",
+              "RelativeToolTip": "DAL\\Interfaces\\IAuthen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T17:28:04.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\UserService.cs",
+              "RelativeToolTip": "BLL\\Services\\UserService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:46:12.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\TransactionService.cs",
+              "RelativeToolTip": "BLL\\Services\\TransactionService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAcwIIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:47:13.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SupplierService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\SupplierService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\SupplierService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\SupplierService.cs",
+              "RelativeToolTip": "BLL\\Services\\SupplierService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAswDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:46:56.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\ProductService.cs",
+              "RelativeToolTip": "BLL\\Services\\ProductService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAiwGsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:46:28.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\NotificationService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\NotificationService.cs",
+              "RelativeToolTip": "BLL\\Services\\NotificationService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:47:34.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\JwtService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\JwtService.cs",
+              "RelativeToolTip": "BLL\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T17:57:00.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DashboardService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\DashboardService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\DashboardService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\DashboardService.cs",
+              "RelativeToolTip": "BLL\\Services\\DashboardService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwBsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T18:16:20.756Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AuthenService.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\AuthenService.cs",
+              "RelativeDocumentMoniker": "BLL\\Services\\AuthenService.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\Services\\AuthenService.cs",
+              "RelativeToolTip": "BLL\\Services\\AuthenService.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAowFIAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T08:45:28.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserTransactionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserTransactionDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\UserTransactionDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserTransactionDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\UserTransactionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T17:22:32.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:28:20.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TransactionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TransactionDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\TransactionDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TransactionDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\TransactionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:29:08.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TokenDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TokenDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\TokenDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\TokenDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\TokenDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T06:00:37.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SupplierProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierProductDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\SupplierProductDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierProductDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\SupplierProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T17:22:20.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SupplierDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\SupplierDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\SupplierDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\SupplierDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:28:54.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductTransactionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductTransactionDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\ProductTransactionDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductTransactionDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\ProductTransactionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T17:21:37.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductNotifiactionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductNotifiactionDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\ProductNotifiactionDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductNotifiactionDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\ProductNotifiactionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T17:21:10.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\ProductDTO.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:28:38.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "NotificationDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\NotificationDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\NotificationDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\NotificationDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\NotificationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-05T13:29:26.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DashboardDTO.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\DashboardDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\DTOs\\DashboardDTO.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\BLL\\DTOs\\DashboardDTO.cs",
+              "RelativeToolTip": "BLL\\DTOs\\DashboardDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T18:15:12.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\User.cs",
+              "RelativeToolTip": "DAL\\Models\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T10:17:21.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Repo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\Repo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\Repo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\Repo.cs",
+              "RelativeToolTip": "DAL\\Repos\\Repo.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T10:27:14.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SupplierRepo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\SupplierRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\SupplierRepo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\SupplierRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\SupplierRepo.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:33:27.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Supplier.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Supplier.cs",
+              "RelativeToolTip": "DAL\\Models\\Supplier.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T10:17:35.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TokenRepo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TokenRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\TokenRepo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TokenRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\TokenRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T08:42:14.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "DataAccessFactory.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\DataAccessFactory.cs",
+              "RelativeDocumentMoniker": "DAL\\DataAccessFactory.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\DataAccessFactory.cs",
+              "RelativeToolTip": "DAL\\DataAccessFactory.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwDgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T10:00:55.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Token.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Token.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Token.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Token.cs",
+              "RelativeToolTip": "DAL\\Models\\Token.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T19:13:53.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "DAL\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Product.cs",
+              "RelativeToolTip": "DAL\\Models\\Product.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T10:17:52.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "InventoryManagementApi\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\InventoryManagementApi\\Models\\LoginModel.cs",
+              "RelativeToolTip": "InventoryManagementApi\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T16:21:58.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\UserRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\UserRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\UserRepo.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:33:12.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "TransactionRepo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TransactionRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\TransactionRepo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\TransactionRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\TransactionRepo.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:34:06.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ProductRepo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\ProductRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\ProductRepo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\ProductRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\ProductRepo.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAqwEwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:33:48.778Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 48,
+              "Title": "NotificationRepo.cs",
+              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\NotificationRepo.cs",
+              "RelativeDocumentMoniker": "DAL\\Repos\\NotificationRepo.cs",
+              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Repos\\NotificationRepo.cs",
+              "RelativeToolTip": "DAL\\Repos\\NotificationRepo.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAmwEIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-04T13:34:52.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
               "Title": "AllContext.cs",
               "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\AllContext.cs",
               "RelativeDocumentMoniker": "DAL\\Models\\AllContext.cs",
@@ -852,18 +864,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T13:30:25.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Notification.cs",
-              "RelativeDocumentMoniker": "DAL\\Models\\Notification.cs",
-              "ToolTip": "C:\\Users\\islam\\Downloads\\advanced .net\\.netPractice\\InventoryManagementApi\\DAL\\Models\\Notification.cs",
-              "RelativeToolTip": "DAL\\Models\\Notification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T10:18:28.668Z"
             },
             {
               "$type": "Document",

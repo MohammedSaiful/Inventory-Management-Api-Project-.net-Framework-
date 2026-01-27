@@ -83,7 +83,7 @@
         /* Create or Update transaction */
         $scope.saveTransaction = function () {
             if ($scope.form.Id) {
-                // Update Logic
+                // Update 
                 $http.put("https://localhost:44332/Api/Transaction/Update/" + $scope.form.Id, $scope.form)
                     .then(function () {
                         $scope.successMsg = "Transaction updated successfully!";
@@ -95,7 +95,7 @@
                         clearMsgs();
                     });
             } else {
-                // Create Logic
+                // Create 
                 $http.post("https://localhost:44332/Api/Transaction/Create", $scope.form)
                     .then(function () {
                         $scope.successMsg = "Transaction created successfully!";

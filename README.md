@@ -42,7 +42,79 @@ The system utilizes an advanced JWT Refresh Mechanism:
    3. Retries the original request with the new token.
    4. Logs the user out only if the Refresh Token is also expired.
 
-## 📸 Project Preview
+
+## 📁 Project Structure.
+Solution 'InventoryManagementApi'
+│
+├── InventoryManagementApi (Presentation Layer)
+│   ├── AuthorizationFilter
+│   │   ├── Logged.cs           (Custom Authentication Filter)
+│   │   └── Role.cs             (Role-Based Authorization Filter)
+│   │
+│   ├── Controllers
+│   │   ├── AuthenticateController.cs
+│   │   ├── DashboardController.cs
+│   │   ├── NotificationController.cs
+│   │   ├── ProductController.cs
+│   │   ├── SupplierController.cs
+│   │   ├── TransactionController.cs
+│   │   └── UserController.cs
+│   │
+│   ├── Models
+│   │   └── LoginModel.cs
+│   │
+│   ├── Global.asax
+│   └── Web.config
+│
+├── BLL (Business Logic Layer)
+│   ├── DTOs (Data Transfer Objects)
+│   │   ├── DashboardDTO.cs
+│   │   ├── ProductDTO.cs
+│   │   ├── SupplierDTO.cs
+│   │   ├── TransactionDTO.cs
+│   │   ├── UserDTO.cs
+│   │   └── (Additional specialized DTOs...)
+│   │
+│   ├── Services
+│   │   ├── AuthenService.cs
+│   │   ├── DashboardService.cs
+│   │   ├── JwtService.cs
+│   │   ├── NotificationService.cs
+│   │   ├── ProductService.cs
+│   │   ├── SupplierService.cs
+│   │   ├── TransactionService.cs
+│   │   └── UserService.cs
+│   │
+│   └── app.config
+│
+├── DAL (Data Access Layer)
+│   ├── Interfaces (Abstractions)
+│   │   ├── IRepo.cs              (Generic Base Interface)
+│   │   ├── IAuthen.cs
+│   │   ├── IProductFeature.cs
+│   │   ├── ISupplierFeature.cs
+│   │   └── ITransactionFeature.cs
+│   │
+│   ├── Models (Entity Framework)
+│   │   ├── AllContext.cs         (Database Context)
+│   │   ├── Product.cs
+│   │   ├── Supplier.cs
+│   │   ├── Transaction.cs
+│   │   └── User.cs
+│   │
+│   ├── Repos (Implementations)
+│   │   ├── Repo.cs               (Base Repository)
+│   │   ├── ProductRepo.cs
+│   │   ├── SupplierRepo.cs
+│   │   └── TransactionRepo.cs
+│   │
+│   ├── DataAccessFactory.cs      (Dependency Inversion Point)
+│   ├── Migrations
+│   └── App.config
+│
+└── README.md
+
+## Project Preview
 
 ### Dashboard
 ![Dashboard Screenshot](./Screenshots/Dashboard.jpg)

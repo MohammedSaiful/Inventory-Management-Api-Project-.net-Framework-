@@ -125,6 +125,20 @@ Solution 'InventoryManagementApi'
 │   ├── Migrations
 │   └── App.config
 │
+├── Frontend (AngularJS SPA)
+│   ├── DashBoard.html        (Module , Interceptor & controllers)
+│   ├── Login.html            (Module , Interceptor & controllers)
+│   ├── ProductUpdated.html   (Module , Interceptor & controllers)
+│   ├── Supplier.html          (Module , Interceptor & controllers)
+│   ├── Transaction.html         (Module , Interceptor & controllers)
+│   ├── styleDashBoard.css
+│   ├── styleLogin.css
+│   ├── styleProductUpdated.css
+│   ├── styleSupplier.css
+│   └── styleTransaction.css               
+│
+├── Screenshots (Project Images)    (Images for README)
+│
 └── README.md
 ```
 

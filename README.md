@@ -44,6 +44,7 @@ The system utilizes an advanced JWT Refresh Mechanism:
 
 
 ## 📁 Project Structure.
+```text
 Solution 'InventoryManagementApi'
 │
 ├── InventoryManagementApi (Presentation Layer)
@@ -125,6 +126,7 @@ Solution 'InventoryManagementApi'
 │   └── App.config
 │
 └── README.md
+\```
 
 ## Project Preview
 

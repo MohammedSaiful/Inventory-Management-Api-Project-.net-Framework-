@@ -48,8 +48,8 @@ Solution 'InventoryManagementApi'
 │
 ├── InventoryManagementApi (Presentation Layer)
 │   ├── AuthorizationFilter
-│   │   ├── Logged.cs           (Custom Authentication Filter)
-│   │   └── Role.cs             (Role-Based Authorization Filter)
+│   │   ├── Logged.cs               (Custom Authentication Filter)
+│   │   └── Role.cs                 (Role-Based Authorization Filter)
 │   │
 │   ├── Controllers
 │   │   ├── AuthenticateController.cs
@@ -61,7 +61,7 @@ Solution 'InventoryManagementApi'
 │   │   └── UserController.cs
 │   │
 │   ├── Models
-│   │   └── LoginModel.cs
+│   │   └── LoginModel.cs           (UI specific view model)
 │   │
 │   ├── Global.asax
 │   └── Web.config
@@ -69,16 +69,21 @@ Solution 'InventoryManagementApi'
 ├── BLL (Business Logic Layer)
 │   ├── DTOs (Data Transfer Objects)
 │   │   ├── DashboardDTO.cs
+│   │   ├── NotificationDTO.cs
 │   │   ├── ProductDTO.cs
+│   │   ├── ProductNotificationDTO.cs
+│   │   ├── ProductTransactionDTO.cs
 │   │   ├── SupplierDTO.cs
+│   │   ├── SupplierProductDTO.cs
+│   │   ├── TokenDTO.cs
 │   │   ├── TransactionDTO.cs
 │   │   ├── UserDTO.cs
-│   │   └── (Additional specialized DTOs...)
+│   │   └── UserTransactionDTO.cs
 │   │
 │   ├── Services
-│   │   ├── AuthenService.cs
+│   │   ├── AuthenService.cs        (Authentication Logic)
 │   │   ├── DashboardService.cs
-│   │   ├── JwtService.cs
+│   │   ├── JwtService.cs           (Token generation & validation)
 │   │   ├── NotificationService.cs
 │   │   ├── ProductService.cs
 │   │   ├── SupplierService.cs
@@ -89,26 +94,33 @@ Solution 'InventoryManagementApi'
 │
 ├── DAL (Data Access Layer)
 │   ├── Interfaces (Abstractions)
-│   │   ├── IRepo.cs              (Generic Base Interface)
+│   │   ├── IRepo.cs                (Generic Base Interface)
 │   │   ├── IAuthen.cs
+│   │   ├── INotificationFeature.cs
 │   │   ├── IProductFeature.cs
 │   │   ├── ISupplierFeature.cs
-│   │   └── ITransactionFeature.cs
+│   │   ├── ITransactionFeature.cs
+│   │   └── IUserFeature.cs
 │   │
 │   ├── Models (Entity Framework)
-│   │   ├── AllContext.cs         (Database Context)
+│   │   ├── AllContext.cs           (Database Context)
+│   │   ├── Notification.cs
 │   │   ├── Product.cs
 │   │   ├── Supplier.cs
+│   │   ├── Token.cs
 │   │   ├── Transaction.cs
 │   │   └── User.cs
 │   │
 │   ├── Repos (Implementations)
-│   │   ├── Repo.cs               (Base Repository)
+│   │   ├── Repo.cs                 (Base Repository)
+│   │   ├── NotificationRepo.cs
 │   │   ├── ProductRepo.cs
 │   │   ├── SupplierRepo.cs
-│   │   └── TransactionRepo.cs
+│   │   ├── TokenRepo.cs
+│   │   ├── TransactionRepo.cs
+│   │   └── UserRepo.cs
 │   │
-│   ├── DataAccessFactory.cs      (Dependency Inversion Point)
+│   ├── DataAccessFactory.cs        (Dependency Inversion Point)
 │   ├── Migrations
 │   └── App.config
 │

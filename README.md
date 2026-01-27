@@ -13,7 +13,7 @@ This system enables businesses to manage products and suppliers while maintainin
 ## Technology Stack
 ### Backend (.NET Web API)
 * Framework: ASP.NET Web API 2
-* Architecture: 3-Layer Pattern (DAL, BLL, Web API)
+* Architecture: 3-Layer Pattern (DAL, BLL, Web API), SOLID Principles
 * ORM: Entity Framework 6 (Code First)
 * Database: Microsoft SQL Server
 * Mapping: AutoMapper (for DTO to Entity conversion)
@@ -26,7 +26,7 @@ This system enables businesses to manage products and suppliers while maintainin
 
 
 ## Technical Architecture
- This project is built on the principle of Separation of Concerns, ensuring the system is modular and easy to scale.
+ This project follows the SOLID design principles to ensure a clean and robust codebase
 1. DAL (Data Access Layer): Uses the Repository Pattern to abstract database operations. It contains the Entity Framework DbContext and Migrations.
 2. BLL (Business Logic Layer): Contains the "Business Intelligence." It processes data, handles DTO mappings, and calculates dashboard statistics.
 3. Web API Layer: Exposes RESTful endpoints. It handles the HTTP request/response lifecycle and implements security filters.
@@ -135,4 +135,6 @@ Solution 'InventoryManagementApi'
 ![Transaction Screenshot](./Screenshots/Supplier_with_Product.jpg)
 
 ### Login
+
 ![Transaction Screenshot](./Screenshots/Login.jpg)
+

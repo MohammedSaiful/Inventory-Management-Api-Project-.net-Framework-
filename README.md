@@ -126,9 +126,10 @@ Solution 'InventoryManagementApi'
 │   └── App.config
 │
 └── README.md
-\```
+```
 
-## Project Preview
+
+## ## Project Preview
 
 ### Dashboard
 ![Dashboard Screenshot](./Screenshots/Dashboard.jpg)
@@ -149,6 +150,5 @@ Solution 'InventoryManagementApi'
 ![Transaction Screenshot](./Screenshots/Supplier_with_Product.jpg)
 
 ### Login
-
 ![Transaction Screenshot](./Screenshots/Login.jpg)
 

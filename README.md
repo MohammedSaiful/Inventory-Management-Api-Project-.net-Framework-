@@ -1,6 +1,6 @@
 # Inventory Management System
 
-A professional, full-stack Inventory Management solution built with a Decoupled 3-Tier Architecture.
+A full-stack Inventory Management solution built with a Decoupled 3-Tier Architecture.
 This system enables businesses to manage products and suppliers while maintaining a secure, audited history of all stock movements.
 
 ## Key Features
